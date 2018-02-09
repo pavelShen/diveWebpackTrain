@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   // JS 执行入口文件
-  entry: './main.ts',
+  entry: './main',
   output: {
     // 把所有依赖的模块合并输出到一个 bundle.js 文件
     filename: 'bundle.js',
@@ -10,12 +10,12 @@ module.exports = {
     path: path.resolve(__dirname, './dist'),
   },
   resolve: {
-    extensions: ['.ts','.js']
+    extensions: ['.ts','.tsx','.js']
   },
   module: {
     rules: [
       {
-        test: /\.ts$/,
+        test: /\.tsx?$/,
         use: ['awesome-typescript-loader'],
       },
     ]
