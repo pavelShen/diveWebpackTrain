@@ -2,13 +2,13 @@
   "name": "dive-into-webpack",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack",
-    "buildTs": "tsc main.ts"
+    "build": "webpack"
   },
   "description": "深入浅出webpack练习",
   "license": "MIT",
   "dependencies": {
-    "babel-runtime": "^6.26.0"
+    "babel-runtime": "^6.26.0",
+    "vue": "^2.5.13"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^3.4.1",
@@ -16,7 +16,11 @@
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.28.9",
+    "ts-loader": "^3.5.0",
     "typescript": "^2.7.1",
+    "vue-loader": "^14.1.1",
+    "vue-template-compiler": "^2.5.13",
     "webpack": "^3.4.0"
   }
 }

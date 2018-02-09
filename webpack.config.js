@@ -10,13 +10,21 @@ module.exports = {
     path: path.resolve(__dirname, './dist'),
   },
   resolve: {
-    extensions: ['.ts','.js']
+    extensions: ['.ts','.js','.vue','.json']
   },
   module: {
     rules: [
       {
+        test: /\.vue$/,
+        use: ['vue-loader']
+      },
+      {
         test: /\.ts$/,
-        use: ['awesome-typescript-loader'],
+        loader: 'ts-loader',
+        exclude: /node_modules/,
+        options: {
+          appendTsSuffixTo: [/\.vue$/],
+        }
       },
     ]
   },

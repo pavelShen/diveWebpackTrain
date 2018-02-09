@@ -1,9 +1,12 @@
 {
   "compilerOptions": {
-    "module": "commonjs", // 编译出的代码采用的模块规范
-    "importHelpers": true, // 辅助函数，类似babel-plugin-transform-runtime
-    "target": "es5", // 编译出的代码采用 ES 的哪个版本
-    "sourceMap": true // 输出 Source Map 方便调试
+    // 构建出 ES5 版本的 JavaScript，与 Vue 的浏览器支持保持一致
+    "target": "es5",
+    // 开启严格模式，这可以对 `this` 上的数据属性进行更严格的推断
+    "strict": true,
+    // TypeScript 编译器输出的 JavaScript 采用 es2015 模块化，使 Tree Shaking 生效
+    "module": "es2015",
+    "moduleResolution": "node"
   },
   "exclude": [ // 不编译这些目录里的文件
     "node_modules"

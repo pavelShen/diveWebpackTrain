@@ -1,0 +1,24 @@
+<!--渲染模版-->
+<template>
+  <h1>{{ msg }}</h1>
+</template>
+
+<!--样式描述-->
+<style scoped>
+  h1 {
+    color: red;
+  }
+</style>
+
+<script lang="ts">
+  import Vue from "vue";
+
+  // 通过 Vue.extend 启用 TypeScript 类型推断
+  export default Vue.extend({
+    data() {
+      return {
+        msg: 'Hello,Vue Webpack',
+      }
+    },
+  });
+</script>

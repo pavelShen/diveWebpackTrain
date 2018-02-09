@@ -3,5 +3,5 @@ export function show(content: string) {
   var f = [1,2,3].map((item)=>{
     return item * item
   })
-  window.document.getElementById('app').innerText = `Hello,${content}`;
+  // window.document.getElementById('app').innerText = `Hello,${content}`;
 }
