@@ -9,7 +9,7 @@ export function show(content: string) {
   function square1(n: number): number {
     return n * n;
   }
-  square1('2');
+  square1(2);
 
   window.document.getElementById('app').innerText = `Hello,${content}`;
 }
